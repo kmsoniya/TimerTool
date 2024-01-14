@@ -1,0 +1,33 @@
+<!-- <div>
+  <h2>Timer</h2>
+  <p>{{ timer }}</p>
+  <button (click)="startTimer()">Start</button>
+  <button *ngIf="showPauseButton" (click)="pauseTimer()">Pause</button>
+  <button *ngIf="showResumeButton" (click)="resumeTimer()">Resume</button>
+  <button (click)="resetTimer()">Reset</button>
+</div> -->
+
+
+<!--2 rd one-->
+<!-- <body>
+<div class="content">
+  <h2>Timer Tool ⏱️</h2>
+  <p id="timer">{{ timer }}</p>
+  <button (click)="startTimer()" *ngIf="!timerRunning">Start</button>
+  <button (click)="startTimer()" *ngIf="!timerRunning">Start</button> -->
+  <!-- <button (click)="pauseTimer()" *ngIf="timerRunning && showPauseButton">Pause</button>
+  <button (click)="resumeTimer()" *ngIf="!timerRunning && showResumeButton">Resume</button>
+  <button (click)="resetTimer()">Reset</button>
+</div> -->
+<!-- </body> --> 
+
+<body>
+  <div class="content">
+    <h2>Timer Tool ⏱️</h2>
+      <p id="timer">{{ timer }}</p>
+    <button (click)="startTimer()" class="start-button" *ngIf="!timerRunning">Start</button>
+    <button (click)="pauseTimer()" class="pause-button" *ngIf="timerRunning && showPauseButton">Pause</button>
+    <button (click)="resumeTimer()" class="resume-button" *ngIf="!timerRunning && !showResumeButton">Resume</button>
+    <button (click)="resetTimer()" class="reset-button">Reset</button>
+  </div>
+</body>
